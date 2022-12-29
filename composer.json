@@ -2,7 +2,7 @@
     "name": "mybizna/crm",
     "description": "",
     "type": "asgard-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "mybizna/core": "^1.0.0",
-        "mybizna/partner": "^1.0.0"
+        "mybizna/core": "^1.0.1",
+        "mybizna/partner": "^1.0.1"
     },
     "extra": {
         "laravel": {
