@@ -8,7 +8,7 @@ use Illuminate\Database\Schema\Blueprint;
 class SaveSearch extends BaseModel
 {
 
-    protected $fillable = ['user_id', 'type', 'global', 'search_name', 'search_val'];
+    protected $fillable = ['partner_id', 'type', 'global', 'search_name', 'search_val'];
     public $migrationDependancy = [];
     protected $table = "crm_save_search";
 
@@ -21,7 +21,7 @@ class SaveSearch extends BaseModel
     public function migration(Blueprint $table)
     {
         $table->increments('id');
-        $table->integer('user_id')->nullable();
+        $table->integer('partner_id')->nullable();
         $table->string('type')->nullable();
         $table->boolean('global')->default(0);
         $table->text('search_name')->nullable();

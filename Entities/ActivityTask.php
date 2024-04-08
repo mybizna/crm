@@ -8,7 +8,7 @@ use Illuminate\Database\Schema\Blueprint;
 class ActivityTask extends BaseModel
 {
 
-    protected $fillable = ['activity_id', 'user_id'];
+    protected $fillable = ['activity_id', 'partner_id'];
     public $migrationDependancy = [];
     protected $table = "crm_activity_task";
 
@@ -22,6 +22,6 @@ class ActivityTask extends BaseModel
     {
         $table->increments('id');
         $table->integer('activity_id')->nullable()->index('activity_id');
-        $table->integer('user_id')->nullable()->index('user_id');
+        $table->integer('partner_id')->nullable()->index('partner_id');
     }
 }

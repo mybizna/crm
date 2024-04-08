@@ -9,7 +9,7 @@ class CustomerActivity extends BaseModel
 {
 
     protected $fillable = [
-        'user_id', 'type', 'message', 'email_subject', 'log_type',
+        'partner_id', 'type', 'message', 'email_subject', 'log_type',
         'start_date', 'end_date', 'extra', 'sent_notification', 'done_at'
     ];
     public $migrationDependancy = [];
@@ -24,7 +24,7 @@ class CustomerActivity extends BaseModel
     public function migration(Blueprint $table)
     {
         $table->increments('id');
-        $table->integer('user_id')->nullable()->index('user_id');
+        $table->integer('partner_id')->nullable()->index('partner_id');
         $table->string('type')->nullable()->index('type');
         $table->longText('message')->nullable();
         $table->text('email_subject')->nullable();
