@@ -26,4 +26,15 @@ class SaveEmailReply extends BaseModel
         $table->text('subject')->nullable();
         $table->longText('template')->nullable();
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

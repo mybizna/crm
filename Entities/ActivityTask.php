@@ -24,4 +24,15 @@ class ActivityTask extends BaseModel
         $table->integer('activity_id')->nullable()->index('activity_id');
         $table->integer('partner_id')->nullable()->index('partner_id');
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

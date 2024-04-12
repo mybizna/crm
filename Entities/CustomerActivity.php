@@ -35,4 +35,15 @@ class CustomerActivity extends BaseModel
         $table->boolean('sent_notification')->default(0);
         $table->dateTime('done_at')->nullable();
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

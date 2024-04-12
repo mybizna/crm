@@ -27,4 +27,14 @@ class SaveSearch extends BaseModel
         $table->text('search_name')->nullable();
         $table->text('search_val')->nullable();
     }
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

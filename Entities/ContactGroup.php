@@ -25,4 +25,15 @@ class ContactGroup extends BaseModel
         $table->text('description')->nullable();
         $table->tinyInteger('private')->nullable();
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

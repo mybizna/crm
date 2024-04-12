@@ -30,4 +30,15 @@ class ContactSubscriber extends BaseModel
 
         $table->unique(['partner_id', 'group_id'], 'user_group');
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }

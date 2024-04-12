@@ -24,4 +24,15 @@ class CustomerCompany extends BaseModel
         $table->bigInteger('customer_id')->nullable()->index('customer_id');
         $table->bigInteger('company_id')->nullable()->index('company_id');
     }
+
+
+    /**
+     * Define rights for this model.
+     *
+     * @return array
+     */
+    public function rights(): array
+    {
+
+    }
 }
