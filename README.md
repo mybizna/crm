@@ -21,7 +21,7 @@ The CRM module offers a comprehensive set of features to streamline customer rel
 To leverage these features, access the MyBizna ERP application and navigate to the CRM module. Explore the available options to effectively manage customer relationships, streamline sales processes, and enhance marketing activities.
 
 ## Requirements
-Mybizna ERP version 1.0 or above
+Mybizna ERP version 2024.1 or above
 
 ## Support
 If you have any questions or need assistance, please contact our support team. We're always happy to help!
